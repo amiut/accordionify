@@ -1,4 +1,4 @@
-# React-Accordion
+# Accordionify - Simple accordion component for react
 
 A very simple React Accordion component without any styling
 
