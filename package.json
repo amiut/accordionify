@@ -22,7 +22,7 @@
   "scripts": {
     "start": "rollup -c rollup.config.js -w",
     "build": "rollup -c rollup.config.js",
-    "deploy": "cd example && yarn build && gh-pages -d example/build",
+    "deploy": "gh-pages -d example/build",
     "prepublishOnly": "yarn build"
   },
   "engines": {
