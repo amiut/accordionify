@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.3f7b9feb.css",
-    "main.js": "/static/js/main.d393ec30.js",
-    "index.html": "/index.html",
-    "main.3f7b9feb.css.map": "/static/css/main.3f7b9feb.css.map",
-    "main.d393ec30.js.map": "/static/js/main.d393ec30.js.map"
+    "main.css": "/accordionify/static/css/main.3f7b9feb.css",
+    "main.js": "/accordionify/static/js/main.d393ec30.js",
+    "index.html": "/accordionify/index.html",
+    "main.3f7b9feb.css.map": "/accordionify/static/css/main.3f7b9feb.css.map",
+    "main.d393ec30.js.map": "/accordionify/static/js/main.d393ec30.js.map"
   },
   "entrypoints": [
     "static/css/main.3f7b9feb.css",
