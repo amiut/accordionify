@@ -3,7 +3,7 @@ import React, { forwardRef } from 'react';
 
 import IAccordionToggle from './IAccordionToggle';
 
-const AccordionToggle = forwardRef<HTMLDivElement, IAccordionToggle>(({ children }, ref) => {
+const AccordionToggle = forwardRef<HTMLDivElement, IAccordionToggle>(({ children, ...props }, ref) => {
   const accordion = useAccordion();
 
   if (!accordion) throw new Error('`AccordionToggle` must be used as a child of `Accordion`');
@@ -16,6 +16,7 @@ const AccordionToggle = forwardRef<HTMLDivElement, IAccordionToggle>(({ children
           accordion.setExpanded(!accordion.expanded);
         }
       }}
+      {...props}
     >
       {children}
     </div>

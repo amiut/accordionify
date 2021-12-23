@@ -1,15 +1,12 @@
 import { useAccordion } from 'contexts/AccordionProvider';
 import React, { forwardRef } from 'react';
-import { ReactNode } from 'react';
 
-export type AccordionToggleButtonProps = {
-  children?: ReactNode;
-};
+import IAccordionToggleButton from './IAccordionToggleButton';
 
-const AccordionToggleButton = forwardRef<HTMLButtonElement, AccordionToggleButtonProps>(({ children }, ref) => {
+const AccordionToggleButton = forwardRef<HTMLButtonElement, IAccordionToggleButton>(({ children, ...props }, ref) => {
   const accordion = useAccordion();
   return (
-    <button ref={ref} type="button">
+    <button ref={ref} {...props} type="button">
       {children ? (
         children
       ) : (

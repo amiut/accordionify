@@ -1,13 +1,10 @@
 import { useAccordionGroup } from 'contexts/AccordionGroupProvider';
 import AccordionProvider from 'contexts/AccordionProvider';
-import React, { forwardRef, ReactNode, useCallback, useEffect, useRef, useState } from 'react';
+import React, { forwardRef, useCallback, useEffect, useRef, useState } from 'react';
 
-export interface AccordionProps {
-  children: ReactNode;
-  defaultOpen?: boolean;
-}
+import IAccordion from './IAccordion';
 
-const Accordion = forwardRef<HTMLDivElement, AccordionProps>(({ children, defaultOpen = false }, ref) => {
+const Accordion = forwardRef<HTMLDivElement, IAccordion>(({ children, defaultOpen = false, ...props }, ref) => {
   const accordionWrapper = useRef<HTMLDivElement>(null);
   const accordionGroup = useAccordionGroup();
   const [expanded, setExpanded] = useState<boolean>(defaultOpen);
@@ -38,7 +35,7 @@ const Accordion = forwardRef<HTMLDivElement, AccordionProps>(({ children, defaul
 
   return (
     <AccordionProvider expanded={expanded} setExpanded={setExpanded} disabled={disabled} setDisabled={setDisabled}>
-      <div ref={accordionWrapper}>
+      <div ref={accordionWrapper} {...props}>
         <div ref={ref}>{children}</div>
       </div>
     </AccordionProvider>

@@ -4,7 +4,7 @@ import { forwardRef } from 'react';
 
 import IAccordionGroup from './IAccordionGroup';
 
-const AccordionGroup = forwardRef<HTMLDivElement, IAccordionGroup>(({ children, atomic = false }, ref) => {
+const AccordionGroup = forwardRef<HTMLDivElement, IAccordionGroup>(({ children, atomic = false, ...props }, ref) => {
   const [storedRef, setStoredRef] = useState<RefObject<HTMLDivElement> | undefined>();
   const refi = useRef<HTMLDivElement>(null);
 
@@ -12,12 +12,13 @@ const AccordionGroup = forwardRef<HTMLDivElement, IAccordionGroup>(({ children, 
     if (refi) {
       setStoredRef(refi);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [refi.current]);
 
   return (
-    <div ref={refi}>
+    <div ref={refi} {...props}>
       <AccordionGroupProvider wrapper={storedRef} atomic={atomic}>
-        {children}
+        <div ref={ref}>{children}</div>
       </AccordionGroupProvider>
     </div>
   );
