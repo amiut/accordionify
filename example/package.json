@@ -1,5 +1,6 @@
 {
   "name": "example",
+  "homepage": "https://amiut.github.io/accordionify",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
