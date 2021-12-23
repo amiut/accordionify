@@ -1,6 +1,6 @@
 {
   "name": "accordionify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple accordion library for react",
   "author": "Amin <hi@amin.nz>",
   "license": "MIT",
