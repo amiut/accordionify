@@ -50,10 +50,29 @@ body {
 
 .accordion-wrapper {
   margin-bottom: 25px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.03);
 }
 
-.accordion-wrapper button {
+.accordion-toggle {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: #fafafa;
+  font-weight: 500;
+}
+
+.accordion-toggle button {
   background: none;
   border: 0;
   outline: none;
+  margin-left: auto;
+}
+
+.accordion-panel {
+  font-weight: 300;
+  padding: 12px 15px;
 }
