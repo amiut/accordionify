@@ -5,7 +5,7 @@ import React, { forwardRef, useCallback, useEffect, useRef, useState } from 'rea
 import IAccordion from './IAccordion';
 
 const Accordion = forwardRef<HTMLDivElement, IAccordion>(
-  ({ className, children, defaultOpen = false, ...props }, ref) => {
+  ({ className = '', children, defaultOpen = false, ...props }, ref) => {
     const accordionWrapper = useRef<HTMLDivElement>(null);
     const accordionGroup = useAccordionGroup();
     const [expanded, setExpanded] = useState<boolean>(defaultOpen);

@@ -5,7 +5,7 @@ import { forwardRef } from 'react';
 import IAccordionGroup from './IAccordionGroup';
 
 const AccordionGroup = forwardRef<HTMLDivElement, IAccordionGroup>(
-  ({ children, className, atomic = false, ...props }, ref) => {
+  ({ children, className = '', atomic = false, ...props }, ref) => {
     const [storedRef, setStoredRef] = useState<RefObject<HTMLDivElement> | undefined>();
     const refi = useRef<HTMLDivElement>(null);
 
