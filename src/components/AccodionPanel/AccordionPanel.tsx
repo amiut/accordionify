@@ -3,13 +3,18 @@ import React, { forwardRef } from 'react';
 
 import IAccordionPanel from './IAccordionPanel';
 
-const AccordionPanel = forwardRef<HTMLDivElement, IAccordionPanel>(({ children, ...props }, ref) => {
+const AccordionPanel = forwardRef<HTMLDivElement, IAccordionPanel>(({ className = '', children, ...props }, ref) => {
   const accordion = useAccordion();
 
   if (!accordion) throw new Error('`AccordionPanel` must be used as a child of `Accordion`');
 
   return (
-    <div ref={ref} {...props} style={{ display: accordion.expanded ? 'block' : 'none' }}>
+    <div
+      className={`accordion-panel ${className}`}
+      ref={ref}
+      {...props}
+      style={{ display: accordion.expanded ? 'block' : 'none' }}
+    >
       {children}
     </div>
   );

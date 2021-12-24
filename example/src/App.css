@@ -47,3 +47,13 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.accordion-wrapper {
+  margin-bottom: 25px;
+}
+
+.accordion-wrapper button {
+  background: none;
+  border: 0;
+  outline: none;
+}

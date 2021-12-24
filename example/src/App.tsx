@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="container">
       <AccordionGroup atomic>
-        <Accordion style={{ background: '#ccc' }} defaultOpen>
+        <Accordion defaultOpen>
           <AccordionToggle>
             Click me to toggle
             <AccordionToggleButton />
