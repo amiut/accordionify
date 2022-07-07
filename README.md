@@ -15,6 +15,18 @@
   </div>
 </div>
 
+### Install
+
+```sh
+npm install accordionify
+```
+
+or 
+
+
+```sh
+yarn add accordionify
+```
 
 ## Basic usage
 
