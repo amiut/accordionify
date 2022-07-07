@@ -1,4 +1,19 @@
-# Accordionify - Simple accordion component for react
+<div align="center">
+  <h3>Accordionify</h3>
+  <h6>Simple Styleless accordion component for React</h6>
+
+  <div>
+    <a href="https://www.npmjs.com/package/accordionify" target="_blank">
+      <img src="https://img.shields.io/npm/v/accordionify?color=cc3534" />
+    </a>
+    <a href="https://www.npmjs.com/package/accordionify" target="_blank">
+    <img src="https://img.shields.io/npm/dm/accordionify?color=%2344cc10" />
+    </a>
+    <a href="https://bundlephobia.com/result?p=accordionify@0.1.3" target="_blank">
+    <img src="https://img.shields.io/bundlephobia/minzip/accordionify/0.1.3?color=%23165be4">
+    </a>
+  </div>
+</div>
 
 A very simple React Accordion component without any styling
 
