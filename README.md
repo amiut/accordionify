@@ -32,7 +32,7 @@ yarn add accordionify
 
 Each expandable accordion can be created using `<Accordion>` component, to make each accordion opened by default simply pass a `defaultOpen` prop:
 
-```
+```jsx
 <Accordion defaultOpen>
   <AccordionToggle>
     Click to open
@@ -51,7 +51,7 @@ as you can see in the above example we're dealing with some additional component
 
 You can also Group multiple accordions with `<AccordionGroup>` component, if you need only one opened accordion at a time, simply pass `atomic` prop to `<AccordionGroup>`
 
-```
+```jsx
 <AccordionGroup atomic>
   <Accordion defaultOpen>
     <AccordionToggle>
