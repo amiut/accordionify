@@ -15,7 +15,6 @@
   </div>
 </div>
 
-A very simple React Accordion component without any styling
 
 ## Basic usage
 
